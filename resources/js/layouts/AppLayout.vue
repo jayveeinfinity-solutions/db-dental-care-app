@@ -1,6 +1,7 @@
 <script setup>
     import Header from './../shared/Header.vue';
     import Footer from './../shared/Footer.vue';
+    import AppointmentModal from '../components/modals/AppointmentModal.vue';
 </script>
 
 <template>
@@ -15,4 +16,5 @@
         <slot />
         <Footer />
     </div>
+    <AppointmentModal />
 </template>

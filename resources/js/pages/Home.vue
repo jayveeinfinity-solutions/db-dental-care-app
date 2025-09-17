@@ -19,7 +19,7 @@
                                 <div class="spacer-single sm-hide"></div>
                                 <div class="subtitle">Family Dental Care</div>
                                 <h1>Elevating Smiles with Expert Care and a Gentle Touch</h1>
-                                <a class="btn-main btn-line fx-slide" href="#"><span>Book Appointment</span></a>
+                                <a class="btn-main btn-line fx-slide" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#appointmentModal"><span>Book Appointment</span></a>
                             </div>
 
                             <div class="d-lg-flex align-items-center">
@@ -64,14 +64,10 @@
                             </div>
                         </div>
                         <!-- Slides -->
-
-
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </section>
 
         <section class="bg-dark text-light pt-50 pb-30">
@@ -150,8 +146,7 @@
                             <li>State-of-the-Art Technology</li>
                             <li>Flexible Appointment Scheduling</li>
                             </ul>
-
-                            <a class="btn-main fx-slide wow fadeInUp" data-wow-delay=".8s" href="contact.html"><span>Book Appointment</span></a>
+                            <a class="btn-main fx-slide wow fadeInUp" data-wow-delay=".8s" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#appointmentModal"><span>Book Appointment</span></a>
                         </div>
                 </div>
                 </div>
@@ -586,12 +581,11 @@
                         <h3 class="mb-0 fs-32">Ready to book your dental care session?</h3>
                     </div>
                     <div class="col-lg-3 text-lg-end">
-                        <a class="btn-main btn-line fx-slide" href="#"><span>Book Appointment</span></a>
+                        <a class="btn-main btn-line fx-slide" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#appointmentModal"><span>Book Appointment</span></a>
                     </div>
                 </div>
             </div>
         </section>
-
     </div>
     <!-- content end -->
 </template>
