@@ -45,4 +45,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function googleInfo()
+    {
+        return $this->hasOne(GoogleUserInfo::class);
+    }
 }

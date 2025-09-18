@@ -11,22 +11,20 @@
     <meta content="Dentia — Dentist & Dental Clinic Website Template" name="description" >
     <meta content="" name="keywords" >
     <meta content="" name="author" >
-    <!-- CSS Files
-    ================================================== -->
+    <!-- CSS Files ================================================== -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
     <link href="css/plugins.css" rel="stylesheet" type="text/css" >
     <link href="css/swiper.css" rel="stylesheet" type="text/css" >
     <link href="css/style.css" rel="stylesheet" type="text/css" >
     <!-- color scheme -->
-    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
 
-    @vite('resources/js/app.js')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @inertiaHead
   </head>
   <body class="font-sans antialiased">
     @inertia
-    <!-- Javascript Files
-    ================================================== -->
+    <!-- Javascript Files ================================================== -->
     <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
     <script src="js/plugins.js"></script>
     <script src="js/designesia.js"></script>

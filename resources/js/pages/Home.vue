@@ -1,8 +1,15 @@
 <script setup>
+    import AppointmentModal from '../components/modals/AppointmentModal.vue';
+    import { useModalStore } from "../stores/modal";
 
+    const modalStore = useModalStore();
+
+    const openAppointmentModal = () => modalStore.open("appointmentModal");
 </script>
 
 <template>
+    <Head title="Home page" />
+    <AppointmentModal />
     <!-- content begin -->
     <div class="no-bottom no-top" id="content">
 
@@ -19,7 +26,7 @@
                                 <div class="spacer-single sm-hide"></div>
                                 <div class="subtitle">Family Dental Care</div>
                                 <h1>Elevating Smiles with Expert Care and a Gentle Touch</h1>
-                                <a class="btn-main btn-line fx-slide" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#appointmentModal"><span>Book Appointment</span></a>
+                                <a class="btn-main btn-line fx-slide" href="javascript:void(0)" @click="openAppointmentModal"><span>Book Appointment</span></a>
                             </div>
 
                             <div class="d-lg-flex align-items-center">
@@ -146,7 +153,7 @@
                             <li>State-of-the-Art Technology</li>
                             <li>Flexible Appointment Scheduling</li>
                             </ul>
-                            <a class="btn-main fx-slide wow fadeInUp" data-wow-delay=".8s" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#appointmentModal"><span>Book Appointment</span></a>
+                            <a class="btn-main fx-slide wow fadeInUp" data-wow-delay=".8s" href="javascript:void(0)" @click="openAppointmentModal"><span>Book Appointment</span></a>
                         </div>
                 </div>
                 </div>
@@ -581,7 +588,7 @@
                         <h3 class="mb-0 fs-32">Ready to book your dental care session?</h3>
                     </div>
                     <div class="col-lg-3 text-lg-end">
-                        <a class="btn-main btn-line fx-slide" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#appointmentModal"><span>Book Appointment</span></a>
+                        <a class="btn-main btn-line fx-slide" href="javascript:void(0)" @click="openAppointmentModal"><span>Book Appointment</span></a>
                     </div>
                 </div>
             </div>
