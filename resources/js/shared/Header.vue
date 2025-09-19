@@ -1,11 +1,13 @@
 <script setup>
-    import { useAuthStore } from "../stores/auth";
-    import { useModalStore } from "../stores/modal";
+    import { useAuthStore } from "@/stores/auth";
+    import { useModalStore } from "@/stores/modal";
+    import { Button } from "@/components/ui/button";
 
     const authStore = useAuthStore();
     const modalStore = useModalStore();
 
     const openAppointmentModal = () => modalStore.open("appointmentModal");
+    const logout = () => authStore.clearAuth();
 
     onMounted(() => {
         authStore.initUser();
@@ -56,7 +58,8 @@
                                 <span id="menu-btn"></span>
                             </div>
                             <div v-else>
-                                <span>Hello, {{ authStore.user.name }}</span>
+                                <span class="px-2">Hello, {{ authStore.user.name }} </span> 
+                                <Button class="tw:bg-red-700 tw:hover:bg-red-800 tw:focus:ring-4 tw:focus:ring-red-300" size="sm" @click="logout">Logout</Button>
                             </div>
 
                             <div id="btn-extra">

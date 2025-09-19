@@ -1,6 +1,6 @@
 <script setup>
-    import AppointmentModal from '../components/modals/AppointmentModal.vue';
-    import { useModalStore } from "../stores/modal";
+    import AppointmentModal from '@/components/modals/AppointmentModal.vue';
+    import { useModalStore } from "@/stores/modal";
 
     const modalStore = useModalStore();
 
